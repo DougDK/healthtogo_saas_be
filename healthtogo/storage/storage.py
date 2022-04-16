@@ -1,19 +1,19 @@
-from contextlib import contextmanager
-import logging
-import os
+# from contextlib import contextmanager
+# import logging
+# import os
 
-from sqlalchemy.ext.automap import automap_base
-from sqlalchemy.orm import Session
-from sqlalchemy.engine import Engine
-from sqlalchemy import MetaData, Table, Column, Integer, String
-from flask import current_app
+# from sqlalchemy.ext.automap import automap_base
+# from sqlalchemy.orm import Session
+# from sqlalchemy.engine import Engine
+# from sqlalchemy import MetaData, Table, Column, Integer, String
+# from flask import current_app
 
-from healthtogo.core.healthtogo_sqlalchemy import HealthToGoSQLAlchemy
-from flask_sqlalchemy import SignallingSession
+# from healthtogo.core.healthtogo_sqlalchemy import HealthToGoSQLAlchemy
+# from flask_sqlalchemy import SignallingSession
 
 # main Flask-SQLAlchemy object - as yet unbound to a Flask app
 # the class_ kwarg defines the default Session class used when creating sessions.
-db = HealthToGoSQLAlchemy(session_options={'class_': SignallingSession})
+# db = HealthToGoSQLAlchemy(session_options={'class_': SignallingSession})
 
 # """ Storage contains various functions for logical DB operations. The DB calls contained in these functions are managed
 # in scoped sessions defined by either a wrapper or a context provided below."""

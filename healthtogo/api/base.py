@@ -3,7 +3,7 @@ from typing import Type
 
 from flask.views import MethodView
 from flask_httpauth import HTTPBasicAuth
-from healthtogo.core.healthtogo_session import H2GSession
+# from healthtogo.core.healthtogo_session import H2GSession
 
 auth = HTTPBasicAuth()
 
@@ -12,7 +12,7 @@ VERBS = ('get', 'post', 'delete', 'head', 'options', 'put', 'patch')
 
 class H2gResourceView(MethodView):
     def __init__(self):
-        self.session: H2GSession = storage.db.session()
+        # self.session: H2GSession = storage.db.session()
         return
     
     @classmethod

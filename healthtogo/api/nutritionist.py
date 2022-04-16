@@ -1,16 +1,4 @@
-from healthtogo.api.base import H2gResourceView
-
-from storage.models import Nutritionist
-
-class NutritionistList(H2gResourceView):
-    _name = 'nutritionist_asd_api'
-    _uri = "/apy/nutritionists"
-
-    def get(self):
-        groups_query = self.session.query(
-            Nutritionist
-        )
-        return '', 200
+# from healthtogo.api.base import H2gResourceView
 
 # class Nutritionist(H2gResourceView):
 #     _name = 'nutritionist_api'
@@ -20,4 +8,13 @@ class NutritionistList(H2gResourceView):
 #         super().__init__()
 
 #     def get(self):
+#         return {'result': 'OK'}
+    
+#     def post(self):
+#         return {'result': 'OK'}
+    
+#     def delete(self):
+#         return {'result': 'OK'}
+    
+#     def put(self):
 #         return {'result': 'OK'}

@@ -1,4 +1,4 @@
-from healthtogo.api.nutritionist import NutritionistList
+from healthtogo.api.nutritionistList import NutritionistList
 from healthtogo.api.login import LogIn
 from healthtogo.api.base import register_endpoint
 
