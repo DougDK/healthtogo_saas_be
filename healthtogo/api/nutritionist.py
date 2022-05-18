@@ -10,7 +10,6 @@ class Nutritionist(H2gResourceView):
         super().__init__()
 
     def get(self, nutritionist_id):
-        print(n)
         for nutri in n['response']:
             if nutri["nutritionist_id"]==nutritionist_id:
                 return nutri

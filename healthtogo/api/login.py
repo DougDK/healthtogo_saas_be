@@ -17,5 +17,5 @@ class LogIn(H2gResourceView):
     _uri = '/apy/login'
 
     @auth.login_required
-    def get(self):
+    def post(self):
         return 'LOGIN SUCCESSFUL', 200
